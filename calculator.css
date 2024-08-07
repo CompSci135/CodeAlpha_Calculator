@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-bottom: 0.25%;
+    color: black;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 0.25%;
+    color: black;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+button{
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    text-align: center;
+    margin: 5%;
+    width: 75%;
+    font-size: 1.5rem;
+    margin-right: 0.1%;
+    color: black;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    width: 5%;
+    font-size: 1.5rem;
+    margin: 0.5%;
+    transition: 0.3s ease;
+    text-align:center;
+    font-family: 'Poppins'
+}
+
+#clear{
+    margin: 0.1%;
+}
+
+button:hover{
+    background-color: rgb(234, 234, 189);
+}
+
+@media (max-width:600px){
+    button{
+        width: 9%;
+    }
+    #del{
+        width: 14%;
+    }
+    #sin{
+        width: 12%;
+    }
+    #cos{
+        width:13%;
+    }
+    #permutation{
+        width:13%;
+    }
+    #combination{
+        width:13%;
+    }
+
+}

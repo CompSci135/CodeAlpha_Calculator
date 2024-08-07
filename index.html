@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <h4>Presented by Cesar Al Ayache</h4>
+    <div>
+        <input id="display" readonly> <!-- this is to display the elements without being able to write anything to it-->
+        <button onclick="clearDisplay()" id="clear">C</button>
+        <button onclick="deleteLastElement()" id="del">Del</button>
+    </div>
+        <div id="group1">
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+        </div>
+        <div id="group2">
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+        </div>
+        <div id="group3">
+            <button onclick="appendToDisplay('x')">x</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+        </div>
+        <div id="group4">
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        <div id="group5">
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="appendToDisplay('e^(')">e<sup>x</sup></button>
+            <button onclick="appendToDisplay('ln(')">ln</button>
+            
+        </div>
+        <div id="group6">
+            <button onclick="appendToDisplay('sin(')" id="sin">sin</button>
+            <button onclick="appendToDisplay('cos(')" id="cos">cos</button>
+            <button onclick="appendToDisplay('!')">!</button>
+            <button onclick="appendToDisplay('P')" id='permutation'>nPr</button>
+            <button onclick="appendToDisplay('C')" id='combination'>nCr</button>
+        </div>
+       
+       <script src="calculator.js"></script>
+</body>
+</html>
